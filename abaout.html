@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" >
-    
+
     <title>Hello, world!</title>
   </head>
   <body>
@@ -19,8 +19,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-            <li class="nav-item active"><a class="nav-link" href="./index.html">Inicio</a></li> 
-            <li class="nav-item"><a class="nav-link" href="./abaout.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li> 
+            <li class="nav-item active"><a class="nav-link" href="./abaout.html">Nosotros</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Precios</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Terminos y Condiciones</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
@@ -34,67 +34,58 @@
       <div class="container">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item active" aria-current="page">Inicio</li>
+                <li class="breadcrumb-item" aria-current="page"><a href="./index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
             </ol>
         </nav>
       </div>
       <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                    <p>
-                        <h3>¿Como Funciona?</h3>
-                        <p>Busca los Hoteles de Acuerdo a tus Preferencias</p>
-                    </p>
-                </div>
-                 <div class="col-sm-4">
-                    <p>
-                        <h3>¿Donde puedo reservar?</h3>
-                        <p>Elige la ciudad que te interese</p>
-                    </p>
-                </div>
-                <div class="col-sm-4">
-                    <p>
-                        <h3>¿Como pago?</h3>
-                        <p>Utiliza tu tarjeta de credito favorita</p>
-                    </p>
-                </div>
-            </div>
+          <span>
+                Acerca de Nosotros:
+              Prueba
+              La especificación de HTML incluye la etiqueta <wbr> (self closing) que significa 'Oportunidad de salto de línea'. Significa que podemos dividir una palabra realmente larga (por ejemplo una url) indicandole al navegador donde cortarla cuando no entre en su contenedor. Obviamente no funciona para nuestro caso.
+
+                Si quieres saber más trucos de Responsive Web Design, tenemos un curso en EDteam: https://ed.team/cursos/rwd
+                
+                Tambien puedes leer este post en inglés.
+                La etiqueta HTML para el salto de párrafo es <br/>
+
+                También puedes utilizar CSS, asignando la propiedad display:block; al elemento que quieras que ocupe todo el ancho de la pantalla.
+
+                Imagina que tienes dos palabras seguidas envueltas en una etiqueta <span> cada una:
+
+                <p><span>Hola</span> <span>caracola</span></p>
+
+                Si le aplicas display:block; a "Hola", desplazará hacia abajo a la siguiente palabra.
+
+                Si la aplicas display:block; a "caracola", esta será la que se desplace.
+
+                En ambos casos el resultado será:
+
+                Hola
+
+                caracola
+
+
+
+          </span> 
+
+
+
+
+
       </div>
 
-      <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                <p>
-                    <h3>Hotel Rio de Janeiro</h3>
-                    <p>Hotel ubicado en el mismo centro de la ciudad de Rio de Janeiro en Brasil</p>
-                </p>
-                <button type="button" class="btn btn-primary">Reservar</button>
-            </div>
-             <div class="col-sm-4">
-                <p>
-                    <h3>Hotel Lima</h3>
-                    <p>Hotel ubicado en el mismo centro de la ciudad de Lima en Peru</p>
-                </p>
-                <button type="button" class="btn btn-primary">Reservar</button>
-            </div>
-            <div class="col-sm-4">
-                <p>
-                    <h3>Hotel Buenos Aires</h3>
-                    <p>Hotel ubicado en el mismo centro de la ciudad de Buenos Aires en Argentina</p>
-                </p>
-                <button type="button" class="btn btn-primary">Reservar</button>
-            </div>
-        </div>
-  </div>
-  <br><br>
-</div>
-  <footer>
-    <div class="jumbotron">
-    <hr class="my-4">
-      <div class="container">
+
+
+      
+      <footer>
+        <div class="jumbotron">
+          <hr class="my-4">
+            <div class="container">
         <div class="row">
             <div class="col-sm-4 d-flex flex-colum">
-                <a href="http://www.facebook.com">Facebook</a> 
+                <a href="http://www.facebook.com">Facebook</a>
                 <a href="http://www.twitter.com">Twitter</a>
                 <a href="http://www.instagram.com">Instagram</a>
                 <a href="http://www.google.com">Google</a>
@@ -117,8 +108,8 @@
 
             </div>
         </div>
-    </div>
-    </div>
+        </div>
+        </div>
       </footer>
 
     <!-- Optional JavaScript -->
