@@ -129,20 +129,47 @@
 
 <div class="tab-game fade" id="tarjeta" role="tabpanel" aria-labelledby="tarjeta-tab"> 
  <div class="container">   
-<div class="d-flex justify-content-center">
-<div class="card" style="width: 18rem;">
-    <div class="card-header" style="background: blue; color:white;">Tarjetas Aceptadas</div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">Tarjeta Bandec</li>
-        <li class="list-group-item">Tarjeta Bpa</li>
-        <li class="list-group-item">Tarjeta AIS</li>
-        <li class="list-group-item">Tarjeta Metropolitana</li>
-    </ul>
- 
+   <div class="accordion" id="accordionTarjetas">
+    <div class="card">
+        <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseBpa"
+                aria-expanded="true" aria-controls="collapseBpa">Tarjeta Bpa</button>
+            </h5>
+        </div>
+        <div id="collapseBpa" class="collapse" aria-labelledby="headingOne" data-parent="#accordionTarjetas">
+            <div class="card-body">
+                Puede Reservar en 3 cuotas sin intereses
+            </div>
+        </div>
 
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseBandec"
+                    aria-expanded="false" aria-controls="collapseBandec">Tarjeta Bandec</button>
+                </h5>
+            </div>
+            <div id="collapseBandec" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTarjetas">
+                <div class="card-body">
+                    Puede Reservar en 3 cuotas con promocion y descuentos si eres clientes fijo de Bandec
+                </div>
+            </div>
 
-</div>
-</div>  
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseAIS"
+                        aria-expanded="false" aria-controls="collapseAIS">Tarjeta AIS</button>
+                    </h5>
+                </div>
+                <div id="collapseAIS" class="collapse" aria-labelledby="headingThree" data-parent="#accordionTarjetas">
+                    <div class="card-body">
+                        Puede Reservar solo desde el exterior y con descuentos por supuesto y con carro incluidos
+                    </div>
+                </div>
+    </div>
+   </div>
 </div>
 </div> 
       
