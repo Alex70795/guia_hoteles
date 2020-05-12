@@ -43,9 +43,30 @@
             </ol>
         </nav>
       </div>
-      
-      <div class="container">
-        <div class="table-responsive">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+              <a class="nav-link active" id="compara-tab" data-toggle="tab" href="#compara" role="tab" aria-controls="compara"
+              aria-selected="true">Compara</a>
+
+          </li>
+          <li >
+            <a class="nav-link " id="tarjeta-tab" data-toggle="tab" href="#tarjeta" role="tab" aria-controls="tarjeta"
+              aria-selected="false">Tarjetas</a>
+
+          </li>
+          <li >
+            <a class="nav-link " id="comentarios-tab" data-toggle="tab" href="#comentarios" role="tab" aria-controls="comentarios"
+              aria-selected="false">Comentarios</a>
+
+          </li>  
+
+
+      </ul>
+
+      <div class="tab-content" id="myTabContent">
+      <div class="tab-game fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab"> 
+    <div class="container">  
+      <div class="table-responsive">
       <table class="table table-striped">
         <thead class="thead-dark">
             <th>Calidad</th>
@@ -103,8 +124,31 @@
       </table>
     </div>
 </div>
+</div>
 
+<div class="tab-game fade" id="tarjeta" role="tabpanel" aria-labelledby="tarjeta-tab"> 
+ <div class="container">   
+<div class="d-flex justify-content-center">
+<div class="card" style="width: 18rem;">
+    <div class="card-header" style="background: blue; color:white;">Tarjetas Aceptadas</div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Tarjeta Bandec</li>
+        <li class="list-group-item">Tarjeta Bpa</li>
+        <li class="list-group-item">Tarjeta AIS</li>
+        <li class="list-group-item">Tarjeta Metropolitana</li>
+    </ul>
+ 
+
+
+</div>
+</div>  
+</div>
+</div> 
       
+      <div class="tab-game fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab"> 
+       Comentarios  
+    </div>
+</div>
       <footer>
         <div class="container">
             <div class="row">
